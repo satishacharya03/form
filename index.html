@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forrm inserting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            justify-content: left;
+            align-items: center;
+            background: linear-gradient(to right, blue, rgb(140, 24, 163), red, orange, yellow, green);
+        }
+
+        form {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        p {
+            margin: 2px;
+        }
+
+        fieldset {
+            padding: 20px;
+            border: 8px solid #ccc;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        textarea {
+            background: scroll;
+            border: 20px, linear-gradient(red purple green yellow orange);
+        }
+
+        .ndfield {
+            margin-top: 300px;
+        }
+
+        .topic {
+            margin: auto !important;
+            background: scroll;
+            color: white;
+            text-shadow: -5px -4px 0 rgb(0, 17, 126);
+            text-align: center;
+        }
+
+        legend {
+            align-self: top;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic">
+        <h1>Gorkha Secondary School</h1>
+        <bold> Student Detail</bold>
+    </div>
+    <form method="get" action="mailto:satishacharya321@gmail.com">
+        <fieldset>
+            <legend align="top"> Personal information</legend>
+            <p>Name: <Input type="text" size=15 name="txt_name" maxlength=25></p>
+            <p>Address <input type="text" size 25 name="txt addr" maxlength=45></p>
+            <p>Email <input type="text" size 25 name="txt email" maxlength=45></p>
+            <p>Password <input type="password" name="txt password" id="Password"></p>
+            <p>Phone <input type="text" size 25 name="txt phone" maxlength=45></p>
+            <p>Date of Birth <input type="text" size 25 name="txt dob" maxlength=45></p>
+            <p> Sex:<Input type="radio" name="r1" value="male">Male
+                <Input type="radio" name="r1" value="Female" checked> Female
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend align="right">Hobby and education</legend>
+            <p>Hobbies:<Input type="checkbox" name="chk1" value="Watching movies">Movies
+                <Input type="checkbox" name="chk2" value="Playing Football" checked>Football
+                <Input type="checkbox" name="chk3" value="Reading Nobel"> Nobel
+                <Input type="checkbox" name="chk4" value="Other">Others
+            </p> <select name="education" id="edu"> Education
+                <option value="PHD">Education</option>
+                <option value=" Master">Master</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="PLUS Two">+2</option>
+                <option value="SLC selected">SLC</option>
+            </select>
+        </fieldset>
+        Few words: <br>
+        <textarea rows=7 cols=50></textarea>
+        <p>
+            <button type="submit">Subbmit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+    <footer>
+        <p style="text-align:right;"><a href="https://satish1.web.app" target="_blank">Copyright &copy; 2024
+                SatishAcharya❣️</a></p>
+
+    </footer>
+</body>
+
+</html>
